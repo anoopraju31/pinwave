@@ -5,7 +5,7 @@ export const sidebarToggleSlice = createSlice({
 	initialState: false,
 	reducers: {
 		toggle: (state) => {
-			state != state
+			return !state
 		},
 	},
 })
