@@ -9,7 +9,7 @@ const Navbar = () => {
 				<Link href='/'> PinWave </Link>
 			</div>
 
-			<div className='hidden md:block flex-1 w-2/5'>
+			<div className='hidden md:block w-2/5'>
 				<SearchBar />
 			</div>
 
