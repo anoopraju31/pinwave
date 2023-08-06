@@ -13,6 +13,11 @@ const Navbar = () => {
 				<SearchBar />
 			</div>
 
+			<div className='hidden lg:flex justify-between items-center gap-4'>
+				<NavLink />
+				<NavLink />
+			</div>
+
 			<div className='block lg:hidden text-lg font-bold'>
 				<RxHamburgerMenu size={22} />
 			</div>
