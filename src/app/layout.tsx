@@ -1,4 +1,4 @@
-import { Navbar, ReduxProvider } from '@/components'
+import { BottomNav, Navbar, ReduxProvider } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -21,6 +21,7 @@ export default function RootLayout({
 				<ReduxProvider>
 					<Navbar />
 					{children}
+					<BottomNav />
 				</ReduxProvider>
 			</body>
 		</html>

@@ -68,7 +68,7 @@ const Sidebar = () => {
 				</div>
 			</div>
 
-			<div className='border-t '>
+			<div className='border-t block lg:hidden'>
 				<div className='p-2 flex items-center gap-3'>
 					<div className='w-8 h-8 rounded-full bg-black'></div>
 					<Link className='' href='/'>
