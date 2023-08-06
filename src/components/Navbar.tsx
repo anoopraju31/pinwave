@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { AiOutlineClose } from 'react-icons/ai'
+import { AnimatePresence, motion } from 'framer-motion'
 import { NavLink, ProfileButton, SearchBar } from '.'
 import { useAppDispatch, useAppSelector } from '@/store'
 import { toggle } from '@/features/sidebarToggleSlice'
@@ -32,12 +33,16 @@ const Navbar = () => {
 			</div>
 
 			<div
-				className='flex lg:hidden w-9 h-9 justify-center items-center rounded-full hover:bg-slate-400 transition-colors duration-300'
+				className='flex lg:hidden w-9 h-9 justify-center items-center rounded-full border-2 border-transparent hover:border-slate-300 transition-colors duration-500'
 				onClick={toggleSideBar}>
 				{sidebarToggle ? (
-					<AiOutlineClose size={22} />
+					<span className='block transition-all duration-1000'>
+						<AiOutlineClose size={24} />
+					</span>
 				) : (
-					<RxHamburgerMenu size={22} />
+					<span className='block transition-all duration-1000'>
+						<RxHamburgerMenu size={24} />
+					</span>
 				)}
 			</div>
 		</header>
