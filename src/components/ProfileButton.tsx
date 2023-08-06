@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProfileButton = () => {
 	return (
-		<div className='w-9 h-9 rounded-full border border-gray-700'>
+		<div className='w-8 h-8 rounded-full border border-gray-700'>
 			<Image
 				src='/anoop.jpg'
 				alt='profile'
