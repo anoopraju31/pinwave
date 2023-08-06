@@ -3,13 +3,11 @@
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { NavLink, ProfileButton, SearchBar } from '.'
-import { useAppDispatch, useAppSelector } from '@/store'
+import { useAppDispatch } from '@/store'
 import { toggle } from '@/features/sidebarToggleSlice'
-import { useState } from 'react'
 
 const Navbar = () => {
 	const dispatch = useAppDispatch()
-	const sidebarToggle = useAppSelector((state) => state.sidebarToggle)
 
 	const toggleSideBar = () => {
 		dispatch(toggle())
