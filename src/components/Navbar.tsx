@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { NavLink, SearchBar } from '.'
+import { NavLink, ProfileButton, SearchBar } from '.'
 
 const Navbar = () => {
 	return (
@@ -9,13 +9,14 @@ const Navbar = () => {
 				<Link href='/'> PinWave </Link>
 			</div>
 
-			<div className='hidden md:block w-2/5'>
+			<div className='hidden md:block flex-1 w-2/5'>
 				<SearchBar />
 			</div>
 
 			<div className='hidden lg:flex justify-between items-center gap-4'>
 				<NavLink title='Home' to='/' />
 				<NavLink title='Create' to='/create' />
+				<ProfileButton />
 			</div>
 
 			<div className='block lg:hidden text-lg font-bold'>
