@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--sidebar-height: calc(100vh - 4rem);
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 }
