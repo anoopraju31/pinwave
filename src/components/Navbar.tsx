@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { SearchBar } from '.'
+import { NavLink, SearchBar } from '.'
 
 const Navbar = () => {
 	return (
-		<header className='h-16 px-4 flex items-center justify-between sticky top-0 bg-slate-600 z-50'>
+		<header className='h-16 px-4 flex items-center justify-between sticky top-0 bg-white text-gray-700 z-50'>
 			<div className='text-lg font-bold'>
 				<Link href='/'> PinWave </Link>
 			</div>
