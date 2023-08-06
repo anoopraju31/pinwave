@@ -2,12 +2,14 @@
 
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { AiOutlineClose } from 'react-icons/ai'
 import { NavLink, ProfileButton, SearchBar } from '.'
-import { useAppDispatch } from '@/store'
+import { useAppDispatch, useAppSelector } from '@/store'
 import { toggle } from '@/features/sidebarToggleSlice'
 
 const Navbar = () => {
 	const dispatch = useAppDispatch()
+	const sidebarToggle = useAppSelector((state) => state.sidebarToggle)
 
 	const toggleSideBar = () => {
 		dispatch(toggle())
@@ -30,9 +32,13 @@ const Navbar = () => {
 			</div>
 
 			<div
-				className='block lg:hidden text-lg font-bold'
+				className='flex lg:hidden w-9 h-9 justify-center items-center rounded-full hover:bg-slate-400 transition-colors duration-300'
 				onClick={toggleSideBar}>
-				<RxHamburgerMenu size={22} />
+				{sidebarToggle ? (
+					<AiOutlineClose size={22} />
+				) : (
+					<RxHamburgerMenu size={22} />
+				)}
 			</div>
 		</header>
 	)
