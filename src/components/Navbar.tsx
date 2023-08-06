@@ -14,8 +14,8 @@ const Navbar = () => {
 			</div>
 
 			<div className='hidden lg:flex justify-between items-center gap-4'>
-				<NavLink />
-				<NavLink />
+				<NavLink title='Home' to='/' />
+				<NavLink title='Create' to='/create' />
 			</div>
 
 			<div className='block lg:hidden text-lg font-bold'>
