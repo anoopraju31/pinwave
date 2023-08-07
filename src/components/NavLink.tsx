@@ -8,7 +8,7 @@ type PageProps = {
 
 const NavLink = ({ title, to }: PageProps) => {
 	return (
-		<div className='px-4 py-2 hover:bg-black hover:text-white  rounded-full transition-colors duration-300'>
+		<div className='px-4 py-2 hover:bg-black hover:text-white font-medium rounded-full transition-colors duration-300'>
 			<Link href={`${to}`}> {title} </Link>
 		</div>
 	)

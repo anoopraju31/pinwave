@@ -14,7 +14,7 @@ const Sidebar = () => {
 		<div
 			className={`w-full sm:w-64 h-[var(--sidebar-height)] p-4 overflow-y-auto z-50 fixed lg:sticky top-16 ${
 				sidebarToggle ? 'left-0' : '-left-[100vw]'
-			} bg-white flex gap-2 flex-col transition-all duration-1000`}>
+			} bg-white lg:border-r flex gap-2 flex-col transition-all duration-1000`}>
 			{/* Nav */}
 			<div className='lg:hidden flex flex-col gap-2'>
 				<div className='p-2 flex items-center gap-3  bg-black text-white rounded-lg'>
