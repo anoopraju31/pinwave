@@ -8,12 +8,13 @@ import { MdOutlineCreate } from 'react-icons/md'
 
 const Sidebar = () => {
 	const sidebarToggle = useAppSelector((state) => state.sidebarToggle)
+
 	return (
 		<div
 			className={`w-full sm:w-64 h-[var(--sidebar-height)] p-4 overflow-y-auto z-50 fixed lg:sticky top-16 ${
 				sidebarToggle ? 'left-0' : '-left-[100vw]'
 			} bg-white flex gap-2 flex-col transition-all duration-1000`}>
-			<div className='flex flex-col gap-2'>
+			<div className='lg:hidden flex flex-col gap-2'>
 				<div className='p-2 flex items-center gap-3  bg-black text-white rounded-lg'>
 					<AiOutlineHome />
 					<Link href='/'> Home </Link>
@@ -33,32 +34,32 @@ const Sidebar = () => {
 				<div className='flex flex-col'>
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Cars </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Bikes </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Abstract </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Landscape </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Art </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
 						<div className='w-8 h-8 rounded-full bg-black group-hover:bg-white'></div>
-						<Link href='/'> Home </Link>
+						<Link href='/'> Street </Link>
 					</div>
 
 					<div className='p-2 flex items-center gap-3 group hover:bg-black hover:text-white rounded-lg'>
