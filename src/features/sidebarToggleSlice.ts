@@ -7,8 +7,11 @@ export const sidebarToggleSlice = createSlice({
 		toggle: (state) => {
 			return !state
 		},
+		close: () => {
+			return false
+		},
 	},
 })
 
-export const { toggle } = sidebarToggleSlice.actions
+export const { toggle, close } = sidebarToggleSlice.actions
 export default sidebarToggleSlice.reducer

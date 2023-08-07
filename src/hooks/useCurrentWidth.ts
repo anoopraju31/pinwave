@@ -8,7 +8,7 @@ const getWidth = () =>
 	document.body.clientWidth
 
 const useCurrentWidth = () => {
-	const [currentWith, setCurrentWidth] = useState<Number>(getWidth())
+	const [currentWith, setCurrentWidth] = useState<number>(getWidth())
 
 	const handleResize = () => {
 		setCurrentWidth(getWidth())
